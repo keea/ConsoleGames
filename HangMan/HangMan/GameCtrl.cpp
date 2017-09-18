@@ -10,9 +10,7 @@
 
 //게임 초기화
 void GameCtrl::Init() {
-	
 	Hangdis.Init();
-	
 }
 
 void GameCtrl::Update() {
@@ -23,12 +21,18 @@ void GameCtrl::Update() {
 	{
 		DefaultDisplay();
 		alpha = inputCtrl.GetAlpha();
+
+		if (alpha == 27) {
+			exit(0);
+		}
+
 		int isNotHang = hangCtrl.IsNotHang(alpha);
 
 		if (isNotHang) {
 			//hangCtrl.ShowPlayInput();
 			if (hangCtrl.IsClear()) {
 				std::cout << "게임 클리어 했습니다." << std::endl;
+				hangCtrl.ShowPlayInput();
 				q = 0;
 			}
 		}
@@ -49,10 +53,9 @@ void GameCtrl::Update() {
 
 void GameCtrl::DefaultDisplay() {
 	inputCtrl.ClearDisplay();
-	Hangdis.gotoxy(0, 2);
+	Hangdis.gotoxy(0, 3);
 	hangCtrl.ShowPlayInput();
 	Hangdis.ShowDanDo();
 	Hangdis.ShowMans();
 	Hangdis.gotoxy(0, 0);
 }
-

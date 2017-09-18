@@ -18,6 +18,7 @@ public:
 	char GetAlpha();
 	~InputCtrl();
 	void ClearDisplay();
+	char ChgAlpha(char ch);
 };
 
 #endif // !__INPUTCTRL_H__

@@ -20,9 +20,14 @@ void InputCtrl::InputAlpha() {
 	{
 		std::cout << "알파벳을 입력해주세요." << std::endl;
 		ch = getch();
+
+		if (ch == ESC_KEY) {
+			alpha = ESC_KEY;
+			break;
+		}
 		isLoop = !IsAlpha(ch);
 	}
-	alpha = ch;
+	alpha = ChgAlpha(ch);
 }
 
 //알파벳 반환
@@ -41,8 +46,16 @@ bool InputCtrl::IsAlpha(char ch) {
 	return true;
 }
 
+//소문자를 대문자로 변경
+char InputCtrl::ChgAlpha(char ch) {
+	if (ch >= 'a' || 'z' <= ch) {
+		return ch - 32;
+	}
+	return ch;
+}
+
 void InputCtrl::ClearDisplay() {
-	Sleep(1000);
+	Sleep(500);
 	system("cls");
 }
 
