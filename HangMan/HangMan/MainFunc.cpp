@@ -8,13 +8,10 @@
 #include "GameCtrl.h"
 #include <iostream>
 #include <windows.h>
-
-//09-15
-//할 일
-//다양한 단어 나오게 하기.
-
+#include <ctime>
 
 void main() {
+	srand(time(NULL));
 	GameCtrl gc;
 	gc.Init();
 	gc.Update();

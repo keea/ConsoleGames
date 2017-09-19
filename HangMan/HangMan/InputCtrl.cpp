@@ -55,7 +55,7 @@ char InputCtrl::ChgAlpha(char ch) {
 }
 
 void InputCtrl::ClearDisplay() {
-	Sleep(500);
+	Sleep(100);
 	system("cls");
 }
 

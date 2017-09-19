@@ -40,7 +40,7 @@ void GameCtrl::Update() {
 			std::cout << "틀렸어요." << std::endl;
 			Hangdis.SetNum(worngNum);
 			worngNum++;
-			if (worngNum >= 7) { //수정하기. 너무 하드코딩임.
+			if (worngNum >= Hangdis.GetMenSize()) {
 				std::cout << "게임오버" << std::endl;
 				Hangdis.ShowDanDo();
 				Hangdis.ShowMans();

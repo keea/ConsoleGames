@@ -143,6 +143,7 @@
     <ClCompile Include="HangData.cpp" />
     <ClCompile Include="GameCtrl.cpp" />
     <ClCompile Include="HangDisplay.cpp" />
+    <ClCompile Include="HangWord.cpp" />
     <ClCompile Include="InputCtrl.cpp" />
     <ClCompile Include="MainFunc.cpp" />
     <ClCompile Include="Man.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="GameCtrl.h" />
     <ClInclude Include="HangCtrl.h" />
     <ClInclude Include="HangDisplay.h" />
+    <ClInclude Include="HangWord.h" />
     <ClInclude Include="InputCtrl.h" />
     <ClInclude Include="Man.h" />
   </ItemGroup>

@@ -10,10 +10,16 @@
 
 #include "Man.h"
 
+enum
+{
+	MAN_SIZE = 7,
+};
+
 class HangDisplay {
 private:
-	Man dyingMan[7];
+	Man dyingMan[MAN_SIZE];
 	int cnt = -1;
+
 	void ShowMan(int idx);
 public:
 	void Init();
@@ -22,6 +28,7 @@ public:
 	void gotoxy(int x, int y);
 	void ShowMans();
 	void SetNum(int num);
+	int GetMenSize();
 };
 
 #endif // !__HANGDISPLAY_H__

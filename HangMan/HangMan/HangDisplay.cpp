@@ -9,7 +9,6 @@
 #include <iostream>
 #include "HangDisplay.h"
 
-
 void HangDisplay::gotoxy(int x, int y)
 {
 	HANDLE hOut;
@@ -44,6 +43,10 @@ void HangDisplay::Init() {
 
 	tempMen.SetMan(6, 9, '|');
 	dyingMan[6] = tempMen;
+}
+
+int HangDisplay::GetMenSize() {
+	return MAN_SIZE;
 }
 
 void HangDisplay::ShowMans(int idx) {

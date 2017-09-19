@@ -25,6 +25,7 @@ public:
 private:
 	char * hangWord; //행맨 문제 답
 	char * playerAns; //플레이어가 입력한 답
+	char * RandHangWord(int randNum);
 };
 
 #endif // !__HANGDATA_H__
