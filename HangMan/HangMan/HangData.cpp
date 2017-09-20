@@ -34,10 +34,10 @@ char * HangData::RandHangWord(int randNum) {
 	hangWords[3] = new HangWord("HELLOWORLD");
 	hangWords[4] = new HangWord("UNREALE");
 	hangWords[5] = new HangWord("UNITY");
-	hangWords[6] = new HangWord("MAPLESTORY");
+	hangWords[6] = new HangWord("COCOS");
 	hangWords[7] = new HangWord("OBJECT");
 	hangWords[8] = new HangWord("COMPUTER");
-	hangWords[9] = new HangWord("PYTHON");
+	hangWords[9] = new HangWord("POINTER");
 
 	return hangWords[randNum]->GetHangWord();
 }

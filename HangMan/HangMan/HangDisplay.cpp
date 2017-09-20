@@ -9,6 +9,7 @@
 #include <iostream>
 #include "HangDisplay.h"
 
+//콘솔의 입력 좌표값 이동
 void HangDisplay::gotoxy(int x, int y)
 {
 	HANDLE hOut;
@@ -21,6 +22,7 @@ void HangDisplay::gotoxy(int x, int y)
 	SetConsoleCursorPosition(hOut, coord);
 }
 
+//초기화
 void HangDisplay::Init() {
 	Man tempMen;
 	tempMen.SetMan(5, 7, '0');
@@ -45,24 +47,29 @@ void HangDisplay::Init() {
 	dyingMan[6] = tempMen;
 }
 
+//사람 사이즈 얻기
 int HangDisplay::GetMenSize() {
 	return MAN_SIZE;
 }
 
+//사람 보여주기
 void HangDisplay::ShowMans(int idx) {
 	ShowMan(idx);
 }
 
+//현재까지 틀린수 셋팅
 void HangDisplay::SetNum(int num) {
 	cnt = num;
 }
 
+//현재까지 틀린 수 만큼 사람 보여주기
 void  HangDisplay::ShowMans() {
 	for (int i = 0; i <= cnt; i++) {
 		ShowMan(i);
 	}
 }
 
+//해당 인덱스의 사람 보여주기
 void HangDisplay::ShowMan(int idx) {
 	Man temp;
 	temp = dyingMan[idx];

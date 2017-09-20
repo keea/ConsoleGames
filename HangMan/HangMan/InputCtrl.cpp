@@ -54,6 +54,7 @@ char InputCtrl::ChgAlpha(char ch) {
 	return ch;
 }
 
+//딜레이 주고 화면 지우기
 void InputCtrl::ClearDisplay() {
 	Sleep(100);
 	system("cls");

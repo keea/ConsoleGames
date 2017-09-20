@@ -22,6 +22,7 @@ HangWord::HangWord(const char * wd) {
 	strcpy(hangWord, wd);
 }
 
+//행맨 단어 가져오기
 char * HangWord::GetHangWord() {
 	return hangWord;
 }
