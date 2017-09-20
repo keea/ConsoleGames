@@ -1,5 +1,5 @@
 /*
-* Çà¸ÇÄÁÆ®·Ñ ´ã´ç
+* í–‰ë§¨ì»¨íŠ¸ë¡¤ ë‹´ë‹¹
 * @file		HangManCtrl.h
 * @date     Fri Sep 15 16:39:43 2017
 * @author   keea
